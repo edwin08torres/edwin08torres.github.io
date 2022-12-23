@@ -1,0 +1,60 @@
+.main {
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main .article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+    height: 100%;
+    /* border: 2px solid red; */
+
+}
+
+.main .article .img {
+    height: 60vh;
+    background: linear-gradient(rgba(5, 7, 12, 0.2), rgba(5, 7, 12, 0.2)), url(/img/perfume.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 0;
+    border-radius: 10px 0 0 10px;
+}
+
+.main .article .details {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    border-radius: 0 10px 10px 0;
+}
+
+.main .article .details .col1 {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.main .article .details .col1 .title .losH {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120px;
+}
+
+.main .article .details .col1 .descripcion {
+    margin: 0;
+    height: 240px;
+    margin: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .article .details .col1 .descripcion p{
+    font-size: 20px;
+    line-height: 1.8;
+    letter-spacing: .1rem;
+}

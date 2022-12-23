@@ -1,0 +1,37 @@
+.main {
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main .article {
+    width: 80%;
+    height: 100%;
+}
+
+
+.main .article .img {
+    height: 50vh;
+    background: linear-gradient(rgba(5, 7, 12, 0.2), rgba(5, 7, 12, 0.2)),
+        url(/img/image-product-mobile.jpg);
+    background-position: top;
+    background-attachment: scroll;
+    background-size: cover;
+    /* border: 2px solid red; */
+}
+
+.main .article .details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.main .article .details .col2 .price{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
